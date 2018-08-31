@@ -1,0 +1,11 @@
+/* Animations Delay */
+@for $i from 2 through 7
+    .topbar-container .menu-screen .text .menu-item:nth-of-type(#{$i})
+        transform: translateY(-(0.16em * $i))
+@for $i from 2 through 7
+    .topbar-container .menu-screen .text .menu-item.anim:nth-of-type(#{$i})
+        transition-delay: (0.12s * $i) +0.2s
+
+@for $i from 1 through 3
+    .topbar-container .menu-screen .text .social a:nth-of-type(#{$i}) img
+        transition-delay: (0.1s * $i) + 1s

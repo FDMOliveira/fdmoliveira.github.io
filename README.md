@@ -1,2 +1,2 @@
-# fdmoliveira.github.io
+# fdmo.github.io
 Personal portfolio hosted by GitHub Pages.
