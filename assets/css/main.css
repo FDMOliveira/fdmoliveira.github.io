@@ -1,4 +1,27 @@
 @media screen and (min-width: 1px) {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+            url('../fonts/Roboto-Bold.woff') format('woff'),
+            url('../fonts/Roboto-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+            url('../fonts/Roboto-Regular.woff') format('woff'),
+            url('../fonts/Roboto-Regular.ttf') format('truetype');
+        font-weight:normal;
+        font-style: normal;
+    }
+    .article > .title-container > *,
+    .article > .body > *:not(.projects), 
+    .projects > * {
+        transform:translateY(70%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
     article .subtitle.in {
         transition-delay: 0.2s;
     }
@@ -12,6 +35,7 @@
         transform: translateY(0%) !important;
         opacity: 1 !important;
     }
+
     .container-fluid {
         height: 100%;
     }
