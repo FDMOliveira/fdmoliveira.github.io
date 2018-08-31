@@ -695,9 +695,6 @@
     .work-container .projects .project a.right {
         margin-left: 4%;
     }
-    .work-container .projects .project .details-container .name:active {
-        transform: translate3D(-8px,8px,1px);
-    }
     .container-fluid article:nth-of-type(1) {
         padding-top: 0; 
     }
