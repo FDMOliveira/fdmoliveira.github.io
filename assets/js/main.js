@@ -1,19 +1,19 @@
 (function () {
     $(function() {
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects), .projects > *' ));
-       $('.welcome').style.height= window.innerHeight - $('.topbar-container').style.height+"px";
+        $('.welcome')[0].height(window.innerHeight - $('.topbar-container').style.height+"px");
        setTimeout(function () {
            $('.pic').classList.add('in');
            $('.title').classList.add('in');
        }, 1);
         document.getElementById('check').addEventListener("click",function() {
             if (document.getElementById('check').checked) {
-                $('body').style.overflow= "hidden";
+                $('body')[0].style.overflow= "hidden";
                 addRemoveAnimation('menu-item', true);
                 addRemoveAnimation('menu-social-btn', true);
             }    
             else {
-                $('body').style.overflow= "initial";
+                $('body')[0].style.overflow= "initial";
                 addRemoveAnimation('menu-item', false);
                 addRemoveAnimation('menu-social-btn', false);
             }
