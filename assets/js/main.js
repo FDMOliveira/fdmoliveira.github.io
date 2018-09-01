@@ -1,10 +1,10 @@
 (function () {
     $(function() {
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects), .projects > *' ));
-        $('.welcome')[0].height(window.innerHeight - $('.topbar-container').style.height+"px");
+        $($('.welcome')[0]).height(window.innerHeight - $('.topbar-container').height()+"px");
        setTimeout(function () {
-           $('.pic').classList.add('in');
-           $('.title').classList.add('in');
+           $('.pic').addClass('in');
+           $('.welcome-text .title').addClass('in');
        }, 1);
         document.getElementById('check').addEventListener("click",function() {
             if (document.getElementById('check').checked) {
@@ -43,7 +43,7 @@
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         siteContent.forEach(function (element,i) {
-            if( $(element).offset().top + 100  < window.innerHeight + scroll) {
+            if($(element).offset().top + 100  < window.innerHeight + scroll) {
                 $(element).addClass('in');
                 siteContent.splice(i,1);
             }
