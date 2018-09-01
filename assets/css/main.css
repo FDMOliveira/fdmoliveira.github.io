@@ -249,6 +249,13 @@
     article.welcome .pic.in {
         opacity: 1;
     }
+    .bg {
+        position: fixed;
+        height: 70%;
+        transform: translateY(40%);
+        width: 100%;
+        background: radial-gradient(circle at center, #ffffff17 0, #14202f00 63%);
+    }
     article .subtitle {
         font-style: italic;
         font-size: 14px;
