@@ -39,7 +39,9 @@
         transform: translateY(0%) !important;
         opacity: 1 !important;
     }
-
+    article .personnal-container .body {
+        line-height: 1.7em;
+    } 
     .container-fluid {
         height: 100%;
     }
