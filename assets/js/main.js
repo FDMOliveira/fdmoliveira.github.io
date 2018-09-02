@@ -1,8 +1,7 @@
 (function () {
     $(function() {
-        console.log($(window).innerHeight());
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects), .projects > *' ));
-        document.querySelector('.welcome').style.height = window.innerHeight+"px";
+        document.querySelector('.welcome').style.height = window.innerHeight +"px";
        setTimeout(function () {
            $('.pic').addClass('in');
            $('.welcome-text .title').addClass('in');
