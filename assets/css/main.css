@@ -5,7 +5,7 @@
     .projects > * {
         transform:translateY(70%);
         opacity: 0;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
     article .subtitle.in {
         transition-delay: 0.2s;

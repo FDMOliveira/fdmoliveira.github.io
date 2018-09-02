@@ -1,7 +1,7 @@
 (function () {
     $(function() {
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects), .projects > *' ));
-        $($('.welcome')[0]).height(window.innerHeight - $('.topbar-container').height()+"px");
+        $($('.welcome')[0]).height(window.innerHeight - $('.topbar-container').height());
        setTimeout(function () {
            $('.pic').addClass('in');
            $('.welcome-text .title').addClass('in');
@@ -19,20 +19,20 @@
             }
        }); 
        function addRemoveAnimation(querySelector, isAdd) {
-            Array.from(document.getElementsByClassName(querySelector)).forEach(function(item) {
+            $('.'+querySelector).each(function(index,item) {
                 if(isAdd)
                     item.classList.add('anim');
                 else
                     item.classList.remove('anim');
-            }) 
+            })
         }
         $('.social img').each(function(index,item) {
             $(item).addClass('in');
         })
         $('.menu-item').each(function(index,item) {
-            item.addEventListener("click", function() {                
+            $(item).on("click", function() {                
                 $('body')[0].style.overflow= "initial";
-                document.getElementById("check").checked = false;
+                $("#check").prop('checked', false);
                 setTimeout(function () {
                     $("html, body").animate({
                         scrollTop: $('.'+item.dataset.name).offset().top - $('.topbar-container').height()
