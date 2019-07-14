@@ -1,5 +1,5 @@
 (function () {
-    Console.log("dá-lhe")
+    console.log("dá-lhe")
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects):not(h2):not(h1), .projects > *' ));
         document.querySelector('.welcome').style.height = window.innerHeight +"px";
        setTimeout(function () {
