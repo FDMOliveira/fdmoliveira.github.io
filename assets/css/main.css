@@ -10,7 +10,7 @@
     article .subtitle.in {
         transition-delay: 0.2s;
     }
-    article .body >*:not(.projects).in {
+    article .body >*:not(.projects):not(h1):not(h2).in {
         transition-delay: 0.4s;
     }
     .menu-item {
@@ -371,11 +371,14 @@
     }
     .work-container .projects .project .details-container .name {
         height: 44px;
-        display: table;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .work-container .projects .project .details-container .name p{
-        display: table-cell;
-        vertical-align: middle;
+    .work-container .projects .project .details-container .name h3 {
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 0;
     }
     .work-container .projects .project .details-container .tech {
         top: 0;
