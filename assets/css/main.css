@@ -282,6 +282,10 @@
         font-size: 18px;
         margin-top: 1.2em;
     }
+    article .body h1,
+    article .body h2 {
+        display: inline;
+    }
     .separator {
         opacity: 0.5;
         width: 36px;
