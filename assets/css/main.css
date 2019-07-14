@@ -297,6 +297,7 @@
     } 
     .personnal-container .body {
         width: 90%;
+        line-height: 1.9;
     }
     .welcome .social {
         margin-top: 4.3em;
