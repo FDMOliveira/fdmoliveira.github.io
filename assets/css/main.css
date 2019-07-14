@@ -275,7 +275,10 @@
     article .subtitle span {
         margin-left: 2em;
     }
-    article .body {
+    article .body,
+    article .body h1,
+    article .body h2 {
+        font-weight: 300;
         font-size: 18px;
         margin-top: 1.2em;
     }
