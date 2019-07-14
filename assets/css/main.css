@@ -1,7 +1,7 @@
 .no-padding {padding: 0 !important;}
 @media screen and (min-width: 1px) {
     .article > .title-container > *,
-    .article > .body > *:not(.projects), 
+    .article > .body > *:not(.projects):not(h1):not(h2), 
     .projects > * {
         transform:translateY(70%);
         opacity: 0;
