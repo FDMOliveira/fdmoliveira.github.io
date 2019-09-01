@@ -378,7 +378,7 @@
     }
     .work-container .projects .project .details-container .name h3 {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 0;
     }
     .work-container .projects .project .details-container .tech {
@@ -637,6 +637,9 @@
     }
 }
 @media screen and (min-width: 1024px) {
+    .work-container .projects .project .details-container .name h3 {
+        font-size: 17px;
+    }
     article .subtitle {
         font-size: 14px;
     }
