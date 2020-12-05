@@ -1,10 +1,10 @@
 (function () {
         var siteContent = $.makeArray($('.article > .title-container > *, .article > .body > *:not(.projects):not(h2):not(h1), .projects > *' ));
         document.querySelector('.welcome').style.height = window.innerHeight +"px";
-       setTimeout(function () {
-           $('.pic').addClass('in');
-           $('.welcome-text .title').addClass('in');
-       }, 1);
+        setTimeout(function () {
+            $('.pic').addClass('in');
+            $('.welcome-text .title').addClass('in');
+        }, 1);
         document.getElementById('check').addEventListener("click",function() {
             if (document.getElementById('check').checked) {
                 $('body')[0].style.overflow= "hidden";
