@@ -13,7 +13,7 @@
         }    
         else {
             $('body')[0].style.overflow= "initial";
-            addRemoveAnimation('menu-item', false);
+            addRemoveAnimation('menu-item', false); 
             addRemoveAnimation('menu-social-btn', false);
         }
     }); 
